@@ -18,12 +18,15 @@ int main()
 				if(j%(a*a*a)==0)
 	            	{
 		            	q++;
-		            }
-		        p++;
+		            
+					}
+				//if(i==2)
+		        //p++;
 		    }   	
 		}	   	
 	}
+	//printf("\n%d %d\n",p,q);
 	if(i==101)
-	printf("%ld",p/100-q);
+	printf("%ld",N-q);
 	return 0;
 }
