@@ -1,20 +1,31 @@
 #include<stdio.h>
 int main()
 {
-	long int i,CFN,p=0;
+	long int a,i=0,CFN,p=0,j=0,q=0;
 	scanf("%ld",&CFN);
+	long int b[CFN]={0};
 	for(i=1;i<=100;i++)
 	{
-		if(i*i*i%CFN==0)
+		a=i+1;
+		if(CFN%(a*a*a)==0)
 		{
-			p+=1;
+			printf("Not Cube Free");
 			break;
 		}
-	    p+=1;	
+		else
+		{
+		    for(j=1;j<=CFN;j++)
+			{
+				if(j%(a*a*a)==0)
+	            	{
+		            	q++;
+		            }
+		        p++;
+		    }   	
+		}
+	   	
 	}
 	if(i==101)
-	printf("Not Cube Free");
-	else
-	printf("%d",p);
+	printf("%d",p/100-q);
 	return 0;
 }
