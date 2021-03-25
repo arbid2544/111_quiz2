@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-	long int a,i=0,CFN,p=0,j=0,q=0;
-	scanf("%ld",&CFN);
+	long long int a,i=0,CFN,p=0,j=0,q=0;
+	scanf("%lld",&CFN);
 	long int b[CFN]={0};
 	for(i=1;i<=100;i++)
 	{
@@ -26,6 +26,6 @@ int main()
 	   	
 	}
 	if(i==101)
-	printf("%d",p/100-q);
+	printf("%lld",p/100-q);
 	return 0;
 }
